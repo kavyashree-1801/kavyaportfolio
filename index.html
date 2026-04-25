@@ -1,0 +1,32 @@
+index.html
+
+```html
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Kavyashree Portfolio</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header><h1>Kavyashree D M</h1><nav><a href='#home'>Home</a><a href='#skills'>Skills</a><a href='#projects'>Projects</a><a href='#contact'>Contact</a></nav></header>
+<section id='home'><h2>Hello, I'm Kavyashree D M</h2><p>Full Stack Developer | MCA Graduate</p></section>
+<section id='skills'><h2>Skills</h2><p>HTML CSS JavaScript React PHP Python MySQL AWS</p></section>
+<section id='projects'><h2>Projects</h2><p>Oceanease | CaterCraft | VeggieDelights | QuizFusion</p></section>
+<section id='contact'><h2>Contact</h2><p>Email: kavyashreedmmohan@gmail.com</p></section>
+<script src='script.js'></script>
+</body></html>
+```
+
+style.css
+
+```css
+body{margin:0;font-family:Arial;background:#08152f;color:#fff}header{display:flex;justify-content:space-between;padding:20px;background:#061127}nav a{color:#fff;margin:10px;text-decoration:none}section{padding:60px 20px}h1{color:#38bdf8}h2{color:#38bdf8}
+```
+
+script.js
+
+```javascript
+document.querySelectorAll('a').forEach(a=>a.onclick=e=>{if(a.hash){e.preventDefault();document.querySelector(a.hash).scrollIntoView({behavior:'smooth'})}})
+```

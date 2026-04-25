@@ -1,0 +1,1 @@
+document.querySelectorAll('a').forEach(a=>a.onclick=e=>{if(a.hash){e.preventDefault();document.querySelector(a.hash).scrollIntoView({behavior:'smooth'})}})
